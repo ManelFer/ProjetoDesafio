@@ -10,76 +10,66 @@
   font-size: 1rem;
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
-  margin-bottom: var(--space-2);
 }
 
 .form .form-subtitle {
   font-size: 0.8rem;
   color: var(--color-text-muted);
-  margin: 0 0 var(--space-3);
 }
 
-.form input,
-.form select {
-  width: 100%;
-  padding: var(--space-2) var(--space-3);
+/* Integração Bootstrap: mantém identidade visual do projeto */
+.form .form-control,
+.form .form-select {
   border-radius: var(--radius);
-  margin-bottom: var(--space-3);
   font-size: 0.9rem;
-  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  border-color: #dee2e6;
 }
 
-.form select {
-  background-color: var(--color-white);
-}
-
-.form input::placeholder {
-  color: var(--color-text-muted);
-}
-
-.form input:focus {
-  outline: none;
+.form .form-control:focus,
+.form .form-select:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 3px var(--color-primary-focus);
 }
 
-.form button {
-  width: 100%;
-  padding: 0.6rem var(--space-4);
-  margin-top: 0;
+.form .form-check-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.form .form-check-input:checked {
   background-color: var(--color-primary);
-  color: var(--color-white);
-  border: none;
-  border-radius: var(--radius);
-  font-size: var(--font-size-base);
+  border-color: var(--color-primary);
+}
+
+.form .form-check-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-focus);
+}
+
+.form .btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   font-weight: 600;
-  cursor: pointer;
+  padding: 0.6rem var(--space-4);
+  border-radius: var(--radius);
   transition: background var(--transition-base), transform var(--transition-fast);
 }
 
-.form button:hover {
+.form .btn-primary:hover {
   background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
   transform: translateY(-1px);
 }
 
-.form button:disabled {
+.form .btn-primary:disabled {
   cursor: wait;
   opacity: 0.8;
   transform: none;
 }
 
-.form-checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-2);
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-3);
-}
-
-.form-checkbox input[type="checkbox"] {
-  margin-top: 3px;
-  width: auto;
+/* Alert do Bootstrap dentro do form */
+.form #form-alert.alert {
+  font-size: 0.9rem;
 }
 
 .form-group {

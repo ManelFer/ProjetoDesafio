@@ -2,17 +2,73 @@
 .Hero {
   position: relative;
   background-color: var(--color-bg-hero);
-  background-image: url("../img/textura-ondular.png");
-  background-size: cover;
-  background-position: center;
   border-bottom-left-radius: var(--radius-lg-bg);
+  overflow: hidden;
+  box-shadow: inset 0 -100px 80px -40px rgba(0, 0, 0, 0.25);
 }
 
+.Hero .hero-nav,
+.Hero .division {
+  position: relative;
+  z-index: 3;
+}
+
+/* Camada de textura — várias ondas (adicione quantas quiser) */
+.hero-textura {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  background-image:
+    url("../../img/textura-ondular.png"),
+    url("../../img/textura-ondular.png"),
+    url("../../img/textura-ondular.png"),
+    url("../../img/textura-ondular.png"),
+    url("../../img/textura-ondular.png"),
+    url("../../img/textura-ondular.png"),
+    url("../../img/textura-ondular.png"),
+    url("../../img/textura-ondular.png");
+  background-size:
+    100% 25%,
+    100% 25%,
+    100% 25%,
+    100% 25%,
+    100% 25%,
+    100% 25%,
+    100% 25%,
+    100% 25%;
+  background-position:
+    center 0,
+    center 14%,
+    center 28%,
+    center 42%,
+    center 57%,
+    center 71%,
+    center 85%,
+    center 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.hero-textura img {
+  display: none;
+}
+
+/* Sombra e brilho sobre a textura */
 .Hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent 60%);
+  z-index: 2;
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.15) 35%,
+      transparent 100%
+    ),
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent 60%);
   pointer-events: none;
 }
 

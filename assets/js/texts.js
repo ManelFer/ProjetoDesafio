@@ -44,7 +44,8 @@ window.TEXTS = {
   "footer.copy.company": "Esta Empresa.",
 
 
-  "about.title": "Lorem ipsum dolor sit amet consectetur",
+  "about.title.prefix": "Lorem ipsum dolor sit amet",
+  "about.title.highlight": "consectetur",
   "about.section1.title": "Quem Somos?",
   "about.section1.body":
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae euismod metus. In aliquam, urna posuere egestas dignissim, nulla dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae euismod metus. In aliquam, urna posuere egestas dignissim, nulla dolor pretium risus, ac imperdiet erat erat quis nibh. Quisque viverra volutpat eros vitae vehicula. Pellentesque tincidunt, lacus eu tincidunt finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae euismod metus. Pellentesque tincidunt, lacus eu tincidunt finibus.",

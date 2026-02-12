@@ -12,16 +12,26 @@
 
 <body>
     <section class="Hero">
-        <nav class="hero-nav">
-            <a href="#"><img src="assets/img/logo.png" alt="AlfamaWeb"></a>
-            <ul>
-                <li><a href="#" data-text-key="nav.precatorios"></a></li>
-                <li><a href="#" data-text-key="nav.empresa"></a></li>
-                <li><a href="#" data-text-key="nav.comoFunciona"></a></li>
-                <li><a href="#" data-text-key="nav.faq"></a></li>
-                <li><a href="#" data-text-key="nav.depoimentos"></a></li>
-            </ul>
-            <button data-text-key="nav.phone"></button>
+        <div class="hero-textura">
+            <img src="assets/img/textura-ondular.png" alt="" aria-hidden="true">
+        </div>
+        <nav class="navbar navbar-expand-lg hero-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="AlfamaWeb"></a>
+                <button class="navbar-toggler hero-nav-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-2 gap-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="#" data-text-key="nav.precatorios"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-text-key="nav.empresa"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-text-key="nav.comoFunciona"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-text-key="nav.faq"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-text-key="nav.depoimentos"></a></li>
+                        <li class="nav-item"><button class="btn hero-nav-cta" data-text-key="nav.phone"></button></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <div class="division">
@@ -38,60 +48,61 @@
             </div>
             <div class="form">
                 <form id="form-contact" action="#" method="post">
-                    <h2 data-text-key="hero.form.title"></h2>
-                    <p class="form-subtitle" data-text-key="hero.form.subtitle"></p>
-                    <div class="form-group">
-                        <input type="text" name="nome" data-placeholder-key="hero.form.placeholder.nome" placeholder="" required>
+                    <div id="form-alert" class="alert d-none" role="alert"></div>
+                    <h2 class="mb-2" data-text-key="hero.form.title"></h2>
+                    <p class="form-subtitle text-muted small mb-3" data-text-key="hero.form.subtitle"></p>
+                    <div class="mb-3 form-group">
+                        <input type="text" class="form-control" name="nome" data-placeholder-key="hero.form.placeholder.nome" placeholder="" required>
                     </div>
-                    <div class="form-group">
-                        <select name="estado" required>
-                        <option value="" disabled selected data-text-key="hero.form.placeholder.estado">Estado/UF</option>
-                        <option value="AC">AC</option>
-                        <option value="AL">AL</option>
-                        <option value="AP">AP</option>
-                        <option value="AM">AM</option>
-                        <option value="BA">BA</option>
-                        <option value="CE">CE</option>
-                        <option value="DF">DF</option>
-                        <option value="ES">ES</option>
-                        <option value="GO">GO</option>
-                        <option value="MA">MA</option>
-                        <option value="MT">MT</option>
-                        <option value="MS">MS</option>
-                        <option value="MG">MG</option>
-                        <option value="PA">PA</option>
-                        <option value="PB">PB</option>
-                        <option value="PR">PR</option>
-                        <option value="PE">PE</option>
-                        <option value="PI">PI</option>
-                        <option value="RJ">RJ</option>
-                        <option value="RN">RN</option>
-                        <option value="RS">RS</option>
-                        <option value="RO">RO</option>
-                        <option value="RR">RR</option>
-                        <option value="SC">SC</option>
-                        <option value="SP">SP</option>
-                        <option value="SE">SE</option>
-                        <option value="TO">TO</option>
-                    </select>
+                    <div class="mb-3 form-group">
+                        <select class="form-select" name="estado" required>
+                            <option value="" disabled selected data-text-key="hero.form.placeholder.estado">Estado/UF</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" name="telefone" data-placeholder-key="hero.form.placeholder.telefone" placeholder="" required>
+                    <div class="mb-3 form-group">
+                        <input type="tel" class="form-control" name="telefone" data-placeholder-key="hero.form.placeholder.telefone" placeholder="" required>
                     </div>
-                    <div class="form-group">
-                        <input type="email" name="email" data-placeholder-key="hero.form.placeholder.email" placeholder="" required>
+                    <div class="mb-3 form-group">
+                        <input type="email" class="form-control" name="email" data-placeholder-key="hero.form.placeholder.email" placeholder="" required>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="valor_precatorio" data-placeholder-key="hero.form.placeholder.valor" placeholder="" required>
+                    <div class="mb-3 form-group">
+                        <input type="text" class="form-control" name="valor_precatorio" data-placeholder-key="hero.form.placeholder.valor" placeholder="" required>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="numero_processo" data-placeholder-key="hero.form.placeholder.processo" placeholder="" required>
+                    <div class="mb-3 form-group">
+                        <input type="text" class="form-control" name="numero_processo" data-placeholder-key="hero.form.placeholder.processo" placeholder="" required>
                     </div>
-                    <label class="form-checkbox">
-                        <input type="checkbox" name="aceito_privacidade" value="1" required>
-                        <span data-text-key="hero.form.checkbox"></span>
-                    </label>
-                    <button type="submit" data-text-key="hero.form.button"></button>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" name="aceito_privacidade" value="1" id="aceito_privacidade" required>
+                        <label class="form-check-label" for="aceito_privacidade"><span data-text-key="hero.form.checkbox"></span></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" data-text-key="hero.form.button"></button>
                 </form>
             </div>
         </div>

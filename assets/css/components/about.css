@@ -19,9 +19,14 @@
 
 .text-center-about h1 {
   font-size: clamp(1.5rem, 2.5vw, 1.875rem);
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
   color: var(--color-text);
   line-height: var(--line-height-tight);
+  margin: 0;
+}
+
+.text-center-about h1 .about-title-highlight {
+  color: var(--color-primary);
 }
 
 
