@@ -1,0 +1,24 @@
+/*
+ * base/base.css
+ * Estilos base da página (body e elementos globais).
+ */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+/* migrar esse campo para o components/division.css e mudar o color para white*/
+p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+  color: var(--color-white);
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}

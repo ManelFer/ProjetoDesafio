@@ -1,0 +1,130 @@
+/* SECTION */
+.esta-empresa {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: var(--space-12) 0;
+  font-family: var(--font-family);
+}
+
+/* CONTAINER */
+.container-esta-empresa {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 var(--layout-padding);
+}
+
+/* TITLE */
+.container-esta-empresa h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-10);
+}
+
+.container-esta-empresa h1 span {
+  color: var(--color-primary);
+}
+
+/* GRID PRINCIPAL */
+.grid-esta-empresa {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+/* IMAGE */
+.box-image-esta-empres {
+  display: flex;
+  justify-content: center;
+}
+
+.box-image-esta-empres img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
+
+/* CARDS CONTAINER */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* CARD */
+.box-text-esta-empresa {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-4);
+  align-items: center;
+
+  background-color: var(--color-white);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+
+  transition: transform var(--transition-base),
+              box-shadow var(--transition-base);
+}
+
+.box-text-esta-empresa:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON */
+.box-text-esta-empresa i {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TEXT */
+.box-text-esta-empresa h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.box-text-esta-empresa p {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-body);
+  white-space: nowrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .grid-esta-empresa {
+    grid-template-columns: 1fr;
+  }
+
+  .box-image-esta-empres {
+    margin-bottom: var(--space-8);
+  }
+
+  .box-image-esta-empres img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-esta-empresa h1 {
+    font-size: 1.6rem;
+  }
+
+  .box-text-esta-empresa {
+    grid-template-columns: 40px 1fr;
+    padding: var(--space-4);
+  }
+
+  .box-text-esta-empresa i {
+    font-size: 1.3rem;
+  }
+}

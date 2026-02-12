@@ -1,0 +1,94 @@
+
+@media (max-width: 992px) {
+  .division {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-8);
+  }
+
+  .text-direita {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .division > div:nth-of-type(2) {
+    order: 2;
+  }
+
+  .division > div:nth-of-type(2) img {
+    max-width: 480px;
+  }
+
+  .form {
+    max-width: 400px;
+    justify-self: center;
+    order: 3;
+  }
+
+  .box-about {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .grid-passos {
+    grid-template-columns: 1fr;
+  }
+
+  .card-passo--centro {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .hero-nav {
+    padding: var(--space-3) var(--layout-padding-sm);
+  }
+
+  .hero-nav ul {
+    gap: var(--space-3);
+  }
+
+  .hero-nav > a img {
+    height: 38px;
+  }
+
+  .division {
+    padding: var(--space-6) var(--layout-padding-sm) 0;
+    gap: var(--space-6);
+  }
+
+  .text-direita h1 {
+    font-size: 1.5rem;
+  }
+
+  .division > div:nth-of-type(2) img {
+    max-width: 400px;
+  }
+
+  .form form {
+    padding: var(--space-5);
+  }
+
+ 
+  .About {
+    padding: var(--space-8) var(--layout-padding-sm);
+  }
+
+  .division-about {
+    gap: var(--space-6);
+  }
+
+  .ComoFunciona {
+    padding: var(--space-8) var(--layout-padding-sm);
+  }
+
+  .titulo-como-funciona {
+    margin-bottom: var(--space-6);
+  }
+
+  .grid-passos {
+    gap: var(--space-4);
+  }
+}

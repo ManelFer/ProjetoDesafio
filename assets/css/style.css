@@ -1,0 +1,15 @@
+
+@import url("config/variables.css");
+@import url("base/reset.css");
+@import url("base/base.css");
+@import url("layout/container.css");
+@import url("components/hero.css");
+@import url("components/nav.css");
+@import url("components/division.css");
+@import url("components/form.css");
+@import url("components/about.css");
+@import url("components/como-funciona.css");
+@import url("components/esta-empresa.css");
+@import url("components/duvidas.css");
+@import url("components/footer.css");
+@import url("responsive/screen.css");

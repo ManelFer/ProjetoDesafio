@@ -1,0 +1,37 @@
+
+.Hero {
+  position: relative;
+  background-color: var(--color-bg-hero);
+  background-image: url("../img/textura-ondular.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: var(--radius-lg-bg);
+}
+
+.Hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent 60%);
+  pointer-events: none;
+}
+
+.hero-whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  z-index: 50;
+}
+
+.hero-whatsapp img {
+  width: 32px;
+  height: 32px;
+}

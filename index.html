@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto desafio AlfaWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="Hero">
+        <nav class="hero-nav">
+            <a href="#"><img src="assets/img/logo.png" alt="AlfamaWeb"></a>
+            <ul>
+                <li><a href="#" data-text-key="nav.precatorios"></a></li>
+                <li><a href="#" data-text-key="nav.empresa"></a></li>
+                <li><a href="#" data-text-key="nav.comoFunciona"></a></li>
+                <li><a href="#" data-text-key="nav.faq"></a></li>
+                <li><a href="#" data-text-key="nav.depoimentos"></a></li>
+            </ul>
+            <button data-text-key="nav.phone"></button>
+        </nav>
+
+        <div class="division">
+            <div class="text-direita">
+                <h1>
+                    <span data-text-key="hero.title.line1"></span><br>
+                    <b data-text-key="hero.title.line2"></b>
+                </h1>
+                <p data-text-key="hero.p1"></p>
+                <p data-text-key="hero.p2"></p>
+            </div>
+            <div>
+                <img src="assets/img/imagem-dois-abraços2.png" alt="Casal de idosos sorrindo">
+            </div>
+            <div class="form">
+                <form id="form-contact" action="#" method="post">
+                    <h2 data-text-key="hero.form.title"></h2>
+                    <p class="form-subtitle" data-text-key="hero.form.subtitle"></p>
+                    <div class="form-group">
+                        <input type="text" name="nome" data-placeholder-key="hero.form.placeholder.nome" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="estado" required>
+                        <option value="" disabled selected data-text-key="hero.form.placeholder.estado">Estado/UF</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefone" data-placeholder-key="hero.form.placeholder.telefone" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" data-placeholder-key="hero.form.placeholder.email" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="valor_precatorio" data-placeholder-key="hero.form.placeholder.valor" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="numero_processo" data-placeholder-key="hero.form.placeholder.processo" placeholder="" required>
+                    </div>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="aceito_privacidade" value="1" required>
+                        <span data-text-key="hero.form.checkbox"></span>
+                    </label>
+                    <button type="submit" data-text-key="hero.form.button"></button>
+                </form>
+            </div>
+        </div>
+        <a href="#" class="hero-whatsapp" aria-label="Fale conosco pelo WhatsApp">
+            <img src="assets/img/zap-icon.png" alt="WhatsApp">
+        </a>
+    </section>
+
+    <section class="About">
+        <!-- aqui vai ser a seção sobre. Vai ser dividida em 3 divs-->
+        <!-- DIV do titulo -->
+        <!-- DIV do texto com foto -->
+        <!-- DIV do texto com foto -->
+        <div class="division-about">
+            <div class="text-center-about">
+                <h1 data-text-key="about.title"></h1>
+            </div>
+
+            <div class="box-about">
+                <div class="box-text-about">
+                    <h2 data-text-key="about.section1.title"></h2>
+                    <p data-text-key="about.section1.body"></p>
+                </div>
+                <div class="box-img-about">
+                    <img src="assets/img/imagem-dois-senhores-sorrindo.png" alt="senhores sorrindo">
+                </div>
+            </div>
+            <!-- segunda caixa: imagem à esquerda, texto à direita -->
+            <div class="box-about box-about--reverse">
+                <div class="box-img-about2">
+                    <img src="assets/img/imagem-sozinha-sorrindo.png" alt="imagem sorrindo">
+                </div>
+                <div class="box-text-about2">
+                    <h2 data-text-key="about.section2.title"></h2>
+                    <p data-text-key="about.section2.body"></p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="ComoFunciona">
+        <div class="container-como-funciona">
+            <h1 class="titulo-como-funciona" data-text-key="como.title"></h1>
+
+            <div class="grid-passos">
+                <div class="card-passo">
+                    <div class="card-passo-header">
+                        <h2 data-text-key="como.passo1.title"></h2>
+                    </div>
+                    <div class="card-passo-content">
+                        <p data-text-key="como.passo1.body"></p>
+                    </div>
+                </div>
+
+                <div class="card-passo">
+                    <div class="card-passo-header">
+                        <h2 data-text-key="como.passo2.title"></h2>
+                    </div>
+                    <div class="card-passo-content">
+                        <p data-text-key="como.passo2.body"></p>
+                    </div>
+                </div>
+
+                <div class="card-passo">
+                    <div class="card-passo-header">
+                        <h2 data-text-key="como.passo3.title"></h2>
+                    </div>
+                    <div class="card-passo-content">
+                        <p data-text-key="como.passo3.body"></p>
+                    </div>
+                </div>
+
+                <div class="card-passo">
+                    <div class="card-passo-header">
+                        <h2 data-text-key="como.passo4.title"></h2>
+                    </div>
+                    <div class="card-passo-content">
+                        <p data-text-key="como.passo4.body"></p>
+                    </div>
+                </div>
+
+                <div class="card-passo card-passo--centro">
+                    <div class="card-passo-header">
+                        <h2 data-text-key="como.passo5.title"></h2>
+                    </div>
+                    <div class="card-passo-content">
+                        <p data-text-key="como.passo5.body"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- campo porque escolher -->
+    <section class="esta-empresa">
+        <div class="container-esta-empresa">
+            <h1><span data-text-key="esta.title.prefix"></span> <span
+                    data-text-key="esta.title.highlight"></span></h1>
+            <div class="grid-esta-empresa">
+                <div class="box-image-esta-empres">
+                    <img src="assets/img/imagem-braço-cruzado.png" alt="homem cruzando os braços">
+                </div>
+                <div class="cards">
+                    <div class="box-text-esta-empresa">
+                        <i class="fa fas like"></i>
+                        <h3 data-text-key="esta.card1.title"></h3>
+                        <p data-text-key="esta.card1.body"></p>
+                    </div>
+
+                    <div class="box-text-esta-empresa">
+                        <i class="fa fa-thumbs-up"></i>
+                        <h3 data-text-key="esta.card2.title"></h3>
+                        <p data-text-key="esta.card2.body"></p>
+                    </div>
+
+                    <div class="box-text-esta-empresa">
+                        <i class="fa fa-star"></i>
+                        <h3 data-text-key="esta.card3.title"></h3>
+                        <p data-text-key="esta.card3.body"></p>
+                    </div>
+
+                    <div class="box-text-esta-empresa">
+                        <i class="fa fa-check-circle"></i>
+                        <h3 data-text-key="esta.card4.title"></h3>
+                        <p data-text-key="esta.card4.body"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- campo duvidas-->
+    <section class="duvidas">
+        <div class="duvida-container">
+            <h2><span data-text-key="duvidas.title"></span> <span data-text-key="duvidas.subtitle"></span></h2>
+        </div>
+        <div class="faq-grid" aria-label="Lista de perguntas frequentes"></div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="footer-brand">
+                <div class="footer-brand-logo">
+                    <img src="assets/img/logo.png" alt="AlfamaWeb">
+                </div>
+                <p data-text-key="footer.cnpj"></p>
+            </div>
+
+            <div class="footer-info-grid">
+                <div class="footer-col">
+                    <div class="footer-info-row">
+                        <span class="footer-icon footer-icon--phone" aria-hidden="true"></span>
+                        <div class="footer-info-text">
+                            <p data-text-key="footer.phone.value"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-info-row">
+                        <span class="footer-icon footer-icon--map" aria-hidden="true"></span>
+                        <div class="footer-info-text">
+                            <p data-text-key="footer.address.text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-info-row">
+                        <span class="footer-icon footer-icon--mail" aria-hidden="true"></span>
+                        <div class="footer-info-text">
+                            <p>
+                                <a href="" data-email-key="footer.email.value"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="site-footer-bottom-inner">
+                <p><span data-text-key="footer.copy.text"></span>
+                    <span data-text-key="footer.copy.company"></span>
+                </p>
+                <div class="footer-bottom-logo">
+                    <img src="assets/img/logo.png" alt="AlfamaWeb">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/texts.js"></script>
+    <script src="assets/js/texts-init.js"></script>
+    <script src="assets/js/faq-data.js"></script>
+    <script src="assets/js/duvidas.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+
+</html>
